@@ -10,6 +10,7 @@ import '../widgets/SliverList.dart';
 import '../widgets/FadeInImage.dart';
 import '../widgets/ClipRRect.dart';
 import '../widgets/FittedBox.dart';
+import '../widgets/LayoutBuilder.dart';
 
 List<LearnWidget> widgets = [
   LearnWidget('SafeArea', SafeAreaScreen()),
@@ -22,4 +23,5 @@ List<LearnWidget> widgets = [
   LearnWidget('FadeInImage', FadeInImageScreen()),
   LearnWidget('ClipRRect', ClipRRectScreen()),
   LearnWidget('FittedBox', FittedBoxScreen()),
+  LearnWidget('LayoutBuilder', LayoutBuilderScreen()),
 ];
