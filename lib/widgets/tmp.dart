@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'Common.dart';
 
-class LayoutScreen extends CommonWidget {
+class TmpScreen extends CommonWidget {
   @override
-  Widget build(BuildContext context) {}
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('tmp'),
+        ),
+        body: Text('tmpPage'));
+  }
 }
