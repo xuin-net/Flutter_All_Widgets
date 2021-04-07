@@ -66,6 +66,7 @@ class WidgetsDetailsPage extends Page {
     return MaterialPageRoute(
       settings: this,
       builder: (BuildContext context) {
+        widget.pageObj.context = context;
         return widget.pageObj;
       },
     );

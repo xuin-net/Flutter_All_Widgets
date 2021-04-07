@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'Common.dart';
 
 class WidgetDetailScreen extends CommonWidget {
-  BuildContext context;
   @override
   Widget build(BuildContext context) {
     return SafeArea(

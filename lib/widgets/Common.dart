@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CommonWidget extends StatelessWidget {
-  final LearnWidget widget;
-
-  CommonWidget({
-    @required this.widget,
-  });
+abstract class CommonWidget extends StatelessWidget {
+  BuildContext context;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +11,7 @@ class CommonWidget extends StatelessWidget {
 
 class LearnWidget {
   final String name;
-  final Widget pageObj;
+  final CommonWidget pageObj;
 
   LearnWidget(this.name, this.pageObj);
 }
