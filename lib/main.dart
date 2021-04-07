@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
+import './widgets/SafeArea.dart';
+import './widgets/Common.dart';
 
 void main() {
   runApp(LearnWidgetsApp());
-}
-
-class LearnWidget {
-  final String name;
-
-  LearnWidget(this.name);
 }
 
 class LearnWidgetsApp extends StatefulWidget {
@@ -18,11 +14,7 @@ class LearnWidgetsApp extends StatefulWidget {
 class _LearnWidgetsAppState extends State<LearnWidgetsApp> {
   LearnWidget _selectedWidget;
 
-  List<LearnWidget> widgets = [
-    LearnWidget('SafeArea'),
-    LearnWidget('Row/Column'),
-    LearnWidget('Wrap')
-  ];
+  List<LearnWidget> widgets = [LearnWidget('SafeArea', WidgetDetailScreen())];
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +66,7 @@ class WidgetsDetailsPage extends Page {
     return MaterialPageRoute(
       settings: this,
       builder: (BuildContext context) {
-        return WidgetDetailScreen(widget: widget);
+        return widget.pageObj;
       },
     );
   }
@@ -103,32 +95,6 @@ class WidgetListScreen extends StatelessWidget {
               onTap: () => onTapped(widget),
             )
         ],
-      ),
-    );
-  }
-}
-
-class WidgetDetailScreen extends StatelessWidget {
-  final LearnWidget widget;
-
-  WidgetDetailScreen({
-    @required this.widget,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            if (widget != null) ...[
-              Text(widget.name, style: Theme.of(context).textTheme.headline6),
-            ],
-          ],
-        ),
       ),
     );
   }
