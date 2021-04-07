@@ -11,19 +11,19 @@ class ClipRRectScreen extends CommonWidget {
           title: Text('ClipRRect'),
         ),
         body: Center(
-            child: ClipRRect(
-                // clipBehavior: Clip.hardEdge,
-                borderRadius: BorderRadius.circular(32.0),
-                child: Stack(
-                  children: [
-                    Center(child: CircularProgressIndicator()),
-                    Center(
-                      child: FadeInImage.memoryNetwork(
-                          imageSemanticLabel: 'hello',
-                          placeholder: kTransparentImage,
-                          image: 'https://picsum.photos/250?image=12'),
-                    )
-                  ],
-                ))));
+            child: Stack(
+          children: [
+            Center(child: CircularProgressIndicator()),
+            Center(
+                child: ClipRRect(
+              // clipBehavior: Clip.hardEdge,
+              borderRadius: BorderRadius.circular(32.0),
+              child: FadeInImage.memoryNetwork(
+                  imageSemanticLabel: 'hello',
+                  placeholder: kTransparentImage,
+                  image: 'https://picsum.photos/250?image=12'),
+            ))
+          ],
+        )));
   }
 }
