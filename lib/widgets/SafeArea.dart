@@ -2,10 +2,15 @@ import 'package:flutter/material.dart';
 
 import 'Common.dart';
 
-class WidgetDetailScreen extends CommonWidget {
+class SafeAreaScreen extends CommonWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+      left: true,
+      // top: false,
+      top: true,
+      right: true,
+      bottom: true,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

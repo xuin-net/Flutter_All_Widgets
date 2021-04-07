@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './widgets/SafeArea.dart';
 import './widgets/Common.dart';
+import './data/metaData.dart' as metaData;
 
 void main() {
   runApp(LearnWidgetsApp());
@@ -14,7 +14,7 @@ class LearnWidgetsApp extends StatefulWidget {
 class _LearnWidgetsAppState extends State<LearnWidgetsApp> {
   LearnWidget _selectedWidget;
 
-  List<LearnWidget> widgets = [LearnWidget('SafeArea', WidgetDetailScreen())];
+  List<LearnWidget> widgets = metaData.widgets;
 
   @override
   Widget build(BuildContext context) {
