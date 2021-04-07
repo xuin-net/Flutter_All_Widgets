@@ -8,9 +8,11 @@ class SliverListScreen extends CommonWidget {
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
-            title: Text('SliverAppBar'),
+            title: Text('SliverAppBar&SliverA'),
             floating: true,
-            flexibleSpace: Placeholder(),
+            flexibleSpace: Placeholder(
+              color: Colors.red,
+            ),
             expandedHeight: 200,
           ),
           SliverList(

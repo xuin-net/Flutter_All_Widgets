@@ -7,6 +7,7 @@ import '../widgets/Opacity.dart';
 import '../widgets/PageView.dart';
 import '../widgets/Table.dart';
 import '../widgets/SliverList.dart';
+import '../widgets/FadeInImage.dart';
 
 List<LearnWidget> widgets = [
   LearnWidget('SafeArea', SafeAreaScreen()),
@@ -16,4 +17,5 @@ List<LearnWidget> widgets = [
   LearnWidget('PageView', PageViewScreen()),
   LearnWidget('Table', TableScreen()),
   LearnWidget('SliverList', SliverListScreen()),
+  LearnWidget('FadeInImage', FadeInImageScreen()),
 ];
