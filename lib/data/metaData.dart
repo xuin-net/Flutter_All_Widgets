@@ -14,6 +14,9 @@ import '../widgets/LayoutBuilder.dart';
 import '../widgets/AbsorbPointer.dart';
 import '../widgets/Transform.dart';
 import '../widgets/BackdropFilter.dart';
+import '../widgets/Align.dart';
+import '../widgets/Positioned.dart';
+import '../widgets/Dismissible.dart';
 
 List<LearnWidget> widgets = [
   LearnWidget('SafeArea', SafeAreaScreen()),
@@ -30,4 +33,7 @@ List<LearnWidget> widgets = [
   LearnWidget('AbsorbPointer', AbsorbPointerScreen()),
   LearnWidget('Transform', TransformScreen()),
   LearnWidget('BackdropFilter', BackdropFilterScreen()),
+  LearnWidget('Align', AlignScreen()),
+  LearnWidget('Positioned', PositionedScreen()),
+  LearnWidget('Dismissible', DismissibleScreen()),
 ];
