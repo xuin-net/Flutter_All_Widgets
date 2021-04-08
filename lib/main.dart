@@ -24,13 +24,9 @@ class _LearnWidgetsAppState extends State<LearnWidgetsApp> {
         pages: [
           MaterialPage(
             key: ValueKey('WidgetsListPage'),
-            child: WidgetListScreen(
-              widgets: widgets,
-              onTapped: _handleWidgetTapped,
-            ),
+            child: WidgetListScreen(widgets, _handleWidgetTapped),
           ),
-          if (_selectedWidget != null)
-            WidgetsDetailsPage(widget: _selectedWidget)
+          if (_selectedWidget != null) WidgetsDetailsPage(_selectedWidget)
         ],
         onPopPage: (route, result) {
           if (!route.didPop(result)) {
@@ -58,9 +54,7 @@ class _LearnWidgetsAppState extends State<LearnWidgetsApp> {
 class WidgetsDetailsPage extends Page {
   final LearnWidget widget;
 
-  WidgetsDetailsPage({
-    this.widget,
-  }) : super(key: ValueKey(widget));
+  WidgetsDetailsPage(this.widget) : super(key: ValueKey(widget));
 
   Route createRoute(BuildContext context) {
     return MaterialPageRoute(
@@ -77,10 +71,7 @@ class WidgetListScreen extends StatelessWidget {
   final List<LearnWidget> widgets;
   final ValueChanged<LearnWidget> onTapped;
 
-  WidgetListScreen({
-    @required this.widgets,
-    @required this.onTapped,
-  });
+  WidgetListScreen(this.widgets, this.onTapped);
 
   @override
   Widget build(BuildContext context) {

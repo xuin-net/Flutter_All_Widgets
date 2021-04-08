@@ -17,6 +17,17 @@ import '../widgets/BackdropFilter.dart';
 import '../widgets/Align.dart';
 import '../widgets/Positioned.dart';
 import '../widgets/Dismissible.dart';
+import '../widgets/SizedBox.dart';
+import '../widgets/ValueListenableBuilder.dart';
+import '../widgets/Draggable.dart';
+import '../widgets/Flexible.dart';
+import '../widgets/MediaQuery.dart';
+import '../widgets/Spacer.dart';
+import '../widgets/AspectRatio.dart';
+import '../widgets/RichText.dart';
+import '../widgets/Drawer.dart';
+import '../widgets/ListWheelScrollView.dart';
+import '../widgets/ShaderMask.dart';
 
 List<LearnWidget> widgets = [
   LearnWidget('SafeArea', SafeAreaScreen()),
@@ -36,4 +47,15 @@ List<LearnWidget> widgets = [
   LearnWidget('Align', AlignScreen()),
   LearnWidget('Positioned', PositionedScreen()),
   LearnWidget('Dismissible', DismissibleScreen()),
+  LearnWidget('SizedBox', SizedBoxScreen()),
+  LearnWidget('ValueListenableBuilder', ValueListenableBuilderScreen()),
+  LearnWidget('Draggable', DraggableScreen()),
+  LearnWidget('Flexible', FlexibleScreen()),
+  LearnWidget('MediaQuery', MediaQueryScreen()),
+  LearnWidget('Spacer', SpacerScreen()),
+  LearnWidget('AspectRatio', AspectRatioScreen()),
+  LearnWidget('RichText', RichTextScreen()),
+  LearnWidget('Drawer', DrawerScreen()),
+  LearnWidget('ListWheelScrollView', ListWheelScrollViewScreen()),
+  LearnWidget('ShaderMask', ShaderMaskScreen()),
 ];
