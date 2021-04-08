@@ -28,6 +28,8 @@ import '../widgets/RichText.dart';
 import '../widgets/Drawer.dart';
 import '../widgets/ListWheelScrollView.dart';
 import '../widgets/ShaderMask.dart';
+import '../widgets/IgnorePointer.dart';
+import '../widgets/ClipOval.dart';
 
 List<LearnWidget> widgets = [
   LearnWidget('SafeArea', SafeAreaScreen()),
@@ -58,4 +60,6 @@ List<LearnWidget> widgets = [
   LearnWidget('Drawer', DrawerScreen()),
   LearnWidget('ListWheelScrollView', ListWheelScrollViewScreen()),
   LearnWidget('ShaderMask', ShaderMaskScreen()),
+  LearnWidget('IgnorePointer', IgnorePointerScreen()),
+  LearnWidget('ClipOval', ClipOvalScreen()),
 ];
