@@ -11,6 +11,9 @@ import '../widgets/FadeInImage.dart';
 import '../widgets/ClipRRect.dart';
 import '../widgets/FittedBox.dart';
 import '../widgets/LayoutBuilder.dart';
+import '../widgets/AbsorbPointer.dart';
+import '../widgets/Transform.dart';
+import '../widgets/BackdropFilter.dart';
 
 List<LearnWidget> widgets = [
   LearnWidget('SafeArea', SafeAreaScreen()),
@@ -24,4 +27,7 @@ List<LearnWidget> widgets = [
   LearnWidget('ClipRRect', ClipRRectScreen()),
   LearnWidget('FittedBox', FittedBoxScreen()),
   LearnWidget('LayoutBuilder', LayoutBuilderScreen()),
+  LearnWidget('AbsorbPointer', AbsorbPointerScreen()),
+  LearnWidget('Transform', TransformScreen()),
+  LearnWidget('BackdropFilter', BackdropFilterScreen()),
 ];
